@@ -12,7 +12,7 @@ contract Token is Ownable, ERC20 {
     address public uniswapV2Pair;
     mapping(address => bool) public blacklists;
 
-    constructor(uint256 _totalSupply) ERC20("Coco", "COCO") {
+    constructor(uint256 _totalSupply) ERC20("Sababa", "SBB") {
         _mint(msg.sender, _totalSupply);
     }
 
@@ -47,4 +47,6 @@ contract Token is Ownable, ERC20 {
     function burn(uint256 value) external {
         _burn(msg.sender, value);
     }
+
+  
 }

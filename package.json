@@ -8,14 +8,14 @@
   },
   "author": "Valentin Shenfeld",
   "license": "ISC",
-  
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "hardhat": "^2.22.2"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^5.0.2"
+    "@openzeppelin/contracts": "^5.0.2",
+    "ethers": "^6.12.1",
+    "viem": "^2.10.9",
+    "wagmi": "^2.9.2"
   }
-
-
 }
