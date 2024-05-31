@@ -15,25 +15,23 @@ async function  main() {
     const tokenContract = new ethers.Contract(
         contarctAdd,
         TokenArtifact.abi,
-        add1
+        add2
     )
 
     const tx = {
         to: contarctAdd,
-        value: parseEther('1.0')
+        value: parseEther('5.0')
     }
 
-    const sendTx = await add1.sendTransaction(tx)
+    const sendTx = await add2.sendTransaction(tx)
     await sendTx.wait()
-    // const tx = tokenContract.burn(10000)
-    // console.log(tx)
+    // const txs = tokenContract.burn()
+    // console.log(txs)
     
-    await currentBalance(add1.address, 'Account 2 balance: ')
+    await currentBalance(add2.address, 'Account 2 balance: ')
     await currentBalance(contarctAdd, 'Contract balance: ')
 
-    
 
-    
 
 }
 
